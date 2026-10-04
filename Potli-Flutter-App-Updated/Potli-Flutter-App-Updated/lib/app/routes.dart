@@ -1,0 +1,25 @@
+abstract final class Routes {
+  static const splash = '/';
+  static const onboarding = '/onboarding';
+  static const login = '/login';
+  static const register = '/register';
+  static const shell = '/shop';
+  static const search = '/search';
+  static const categories = '/categories';
+  static const menu = '/menu';
+  static const subCategories = '/sub-categories';
+  static const listing = '/listing';
+  static const detail = '/product';
+  static const wishlist = '/wishlist';
+  static const checkout = '/checkout';
+  static const success = '/order-success';
+  static const orders = '/orders';
+  static const addressBook = '/address-book';
+  static const addressForm = '/address-form';
+  static const paymentMethods = '/payment-methods';
+  static const notifications = '/notifications';
+  static const potliCredits = '/potli-credits';
+  static const wallet = '/wallet';
+  static const communicationPreferences = '/communication-preferences';
+  static const support = '/support';
+}

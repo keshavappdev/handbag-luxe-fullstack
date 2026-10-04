@@ -1,0 +1,59 @@
+name: potli
+description: POTLI luxury fashion commerce experience.
+publish_to: "none"
+version: 1.2.0+6
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  get_storage: ^2.1.1
+  flutter_secure_storage: ^9.2.4
+  google_fonts: ^6.2.1
+  http: ^1.2.0
+  url_launcher: ^6.3.1
+  google_sign_in: ^6.3.0
+  firebase_core: ^3.8.0
+  firebase_messaging: ^15.1.6
+  flutter_local_notifications: ^19.0.0
+  flutter_html: ^3.0.0
+  razorpay_flutter: ^1.4.0
+  webview_flutter: ^4.10.0
+  printing: ^5.13.4
+  path_provider: ^2.1.5
+  pdf: ^3.11.1
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# flutter_html 3.0.0 calls a top-level `matches()` in package:html's
+# query_selector.dart that html 0.15.7 removed ("Method not found: 'matches'").
+# Pin to the last release that still has it.
+dependency_overrides:
+  html: 0.15.6
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo/potli_mark.png
+    - assets/images/logo/potli_wordmark_luxury.png
+    - assets/images/onboarding/potli_story_01.png
+    - assets/images/onboarding/potli_story_02.png
+    - assets/images/onboarding/potli_story_03.png
+    - assets/images/banners/potli_signature_campaign.png
+    - assets/images/editorial/atelier_edit.png
+    - assets/images/categories/signature_handbags.png
+    - assets/images/categories/structured_totes.png
+    - assets/images/categories/evening_bead_bags.png
+    - assets/images/products/aaria_tote.png
+    - assets/images/products/zoya_signature.png
+    - assets/images/products/noor_carryall.png
+    - assets/images/products/mira_mini.png
+    - assets/images/products/veera_tote.png

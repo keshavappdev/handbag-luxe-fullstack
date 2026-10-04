@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash / Launch Theme -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <!-- Normal App Theme -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/offWhite</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/offWhite</item>
+    </style>
+
+    <!-- Color Resources -->
+    <color name="black">#000000</color>
+    <color name="offWhite">#F7F7F5</color>
+    <color name="white">#FFFFFF</color>
+</resources>

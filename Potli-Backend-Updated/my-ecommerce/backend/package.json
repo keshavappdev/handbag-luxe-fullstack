@@ -1,0 +1,43 @@
+{
+  "name": "potli-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "admin": "node scripts/create-admin.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test test/security.test.js",
+    "test:integration": "node --test --test-concurrency=1 test/integration.test.js",
+    "setup": "node scripts/init-env.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "firebase-admin": "^14.5.0",
+    "google-auth-library": "^10.3.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.0",
+    "multer": "^2.0.2",
+    "sharp": "^0.35.4",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.1",
+    "supertest": "^7.1.4"
+  },
+  "overrides": {
+    "gaxios": {
+      "uuid": "^11.1.1"
+    }
+  }
+}
