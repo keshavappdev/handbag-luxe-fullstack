@@ -42,9 +42,9 @@
 
 <div align="center">
 
-<img src="assets/images/screenshots/1.png" width="30%" alt="Potli Mobile Screen 1"/>
-<img src="assets/images/screenshots/2.png" width="30%" alt="Potli Mobile Screen 2"/>
-<img src="assets/images/screenshots/3.png" width="30%" alt="Potli Mobile Screen 3"/>
+<img src="Potli-Flutter-App-Updated/Potli-Flutter-App-Updated/assets/images/screenshots/1.png" width="30%" alt="Potli Mobile Screen 1"/>
+<img src="Potli-Flutter-App-Updated/Potli-Flutter-App-Updated/assets/images/screenshots/2.png" width="30%" alt="Potli Mobile Screen 2"/>
+<img src="Potli-Flutter-App-Updated/Potli-Flutter-App-Updated/assets/images/screenshots/3.png" width="30%" alt="Potli Mobile Screen 3"/>
 
 <p><em>The Potli mobile shopping experience</em></p>
 
@@ -54,15 +54,15 @@
 
 <div align="center">
 
-<img src="assets/images/admin/1.png" width="90%" alt="Admin Dashboard Overview"/>
+<img src="Potli-Flutter-App-Updated/Potli-Flutter-App-Updated/assets/images/admin/1.png" width="90%" alt="Admin Dashboard Overview"/>
 
 <p><em>📊 Dashboard Overview</em></p>
 
-<img src="assets/images/admin/2.png" width="90%" alt="Admin Management Interface"/>
+<img src="Potli-Flutter-App-Updated/Potli-Flutter-App-Updated/assets/images/admin/2.png" width="90%" alt="Admin Management Interface"/>
 
 <p><em>🗂️ Management Interface</em></p>
 
-<img src="assets/images/admin/3.png" width="90%" alt="Admin Additional Interface"/>
+<img src="Potli-Flutter-App-Updated/Potli-Flutter-App-Updated/assets/images/admin/3.png" width="90%" alt="Admin Additional Interface"/>
 
 <p><em>⚡ Additional Interface</em></p>
 
