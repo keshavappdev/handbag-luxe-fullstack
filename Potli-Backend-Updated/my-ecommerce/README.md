@@ -1,6 +1,6 @@
 # POTLI — Flutter + Express + MongoDB + React
 
-This project is the backend and admin workspace for the **Potli** Flutter application. The existing Flutter architecture, screens and navigation remain compatible with these APIs. Products, categories, stock, customers, carts, wishlists, addresses, orders and supporting account features use the new Node.js API.
+This project is the backend and admin workspace for the **Potli** Flutter application. The customer Flutter application is maintained separately and is not included in this backend/admin archive. Products, categories, stock, customers, carts, wishlists, addresses, orders and supporting account features use the new Node.js API.
 
 **Start with local Cash on Delivery checkout.** You do not need Cloudinary, Razorpay, Google OAuth or Firebase credentials for the core shopping flow. Real third-party integrations require your own accounts and credentials; no shared/demo credentials are included.
 
@@ -8,7 +8,7 @@ This project is the backend and admin workspace for the **Potli** Flutter applic
 
 ```text
 my-ecommerce/
-├── mobile-app/       Existing Flutter customer application, integrated
+├── mobile-app/       Not included in this backend/admin ZIP; supplied separately
 ├── backend/          Express API, Mongoose models, services, tests, setup scripts
 ├── admin-panel/      React/Vite administration application
 ├── docker-compose.yml  Local MongoDB replica set
@@ -357,3 +357,11 @@ This delivery does not publish or connect to your existing production store.
 ## 15. Learning phase — afterward
 
 Once your local flow succeeds, use this codebase in this order: `src/server.js` → `src/app.js` → `routes/` → `controllers/` → `services/` → `models/` → `config/database.js` → `middleware/auth.js` → React `src/api.js` → Flutter `lib/services/api/`. The source analysis and API reference explain file responsibilities without replacing the runnable code with a tutorial.
+
+## Public GitHub security note
+
+This repository archive excludes both local `.env` files. Copy `.env.example` only as a template; generate actual local credentials with `cd backend && npm run setup`. Set separate strong production credentials privately through environment variables or your deployment secret manager. No admin account is seeded; create one interactively with `npm run admin` after setting up the database.
+
+**Required action before public use:** the original uploaded archive contained an actual JWT signing value inside `backend/.env`. If that key has been used by a running environment, rotate it in that environment and invalidate old sessions; removing the key from a new ZIP does not revoke previously issued JWTs or erase old Git history. Review any previously pushed repository history before changing visibility to public.
+
+Use the no-password Docker MongoDB config strictly for local development (port bound to loopback). For production use proper database authentication, TLS and secrets management. Test examples in `backend/test/` contain static **test-only** passwords and tokens and are not application credentials.

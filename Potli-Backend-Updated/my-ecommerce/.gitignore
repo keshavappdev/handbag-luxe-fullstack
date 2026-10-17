@@ -1,10 +1,28 @@
-node_modules/
+# Secrets — never commit local credentials
 .env
 .env.*
 !.env.example
-uploads/*
-!uploads/.gitkeep
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.jks
+*.keystore
+key.properties
+*service-account*.json
+*serviceAccount*.json
+*firebase-adminsdk*.json
+**/credentials.json
+**/secrets.json
+**/.firebase/
+# Generated dependencies and build artifacts
+node_modules/
 dist/
+coverage/
+.cache/
 .dart_tool/
 .flutter-plugins*
 build/
@@ -14,10 +32,9 @@ Pods/
 *.apk
 *.aab
 *.ipa
-*.jks
-*.keystore
-key.properties
 local.properties
-*service-account*.json
+# Runtime data
+uploads/*
+!uploads/.gitkeep
 *.log
 .DS_Store
