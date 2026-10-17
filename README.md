@@ -203,7 +203,7 @@ handbag-luxe-fullstack/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/keshavappdev/<your-repo-name>.git
+git clone https://github.com/keshavappdev/handbag-luxe-fullstack.git
 cd handbag-luxe-fullstack
 ```
 
